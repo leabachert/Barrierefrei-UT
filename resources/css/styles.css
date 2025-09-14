@@ -1,0 +1,243 @@
+/* === Grundlayout & Typografie === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0ebe0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #a51e37;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.primary {
+    background-color: #ac3743;
+    color: white;
+}
+
+button.primary:hover {
+    background-color: #8f1a2f;
+}
+
+button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.logout {
+    margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ac3743;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+thead {
+    background-color: #d9cdb1;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7e6e7;
+}
+
+tbody tr:hover {
+    background-color: #d0cfd2;
+}
+
+
+.table-scroll {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table-scroll table {
+    min-width: 600px;
+}
+
+a {
+    color: #a51e37;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.popup {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    max-width: 300px;
+    width: 95%;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popup-buttons button {
+    background-color: #ac3743;
+    color: white;
+}
+
+.tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.tab {
+    background-color: transparent;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tab:hover {
+    background-color: #f2f6fc;
+    color: #ac3743;
+}
+
+.tab.active {
+    background-color: #ac3743;
+    color: white;
+}
+
+.wrap input,
+.wrap select {
+    max-width: 600px;
+}
+.wrap {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 24px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+@media (min-width: 900px) {
+    .wrap {
+        max-width: 75%;
+    }
+}
+
+.header {
+    background-color: #a51e37;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    border-bottom: 1px solid #c8e4f9;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.back-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    color: #d0cfd2;
+}
+
+.title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+@media (min-width: 900px) {
+    .title {
+        font-size: 1.25rem;
+    }
+}
+
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: #ffffff;
+    margin: 0 12px;
+}
